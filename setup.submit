@@ -1,0 +1,11 @@
+Universe   = vanilla
+executable              = setup.sh
+Arguments		= $(Process)
+transfer_input_files	= $(Process)-pre.mp4
+log                     = out/job.log
+output                  = out/setup.outfile-$(Process).txt
+error                   = out/setup.errors-$(Process).txt
+should_transfer_files   = Yes
+transfer_output_file	= $(Process)-post.mp4
+when_to_transfer_output = ON_EXIT
+queue 3 

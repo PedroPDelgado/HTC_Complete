@@ -1,0 +1,11 @@
+Universe   = vanilla
++PreCmd			= divider.sh
+executable              = setup.sh
+Arguments		= 3
+transfer_input_files	= 1.mp4
+log                     = out/job.log
+output                  = out/setup.outfile-$(Process).txt
+error                   = out/setup.errors-$(Process).txt
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+queue

@@ -1,0 +1,3 @@
+JOB Worker worker.submit
+SCRIPT PRE Worker divider.sh 3 10sec_video.mp4
+SCRIPT POST Worker joiner.sh resized.mp4 partitions 
