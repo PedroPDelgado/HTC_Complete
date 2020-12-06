@@ -1,9 +1,0 @@
-Universe   = vanilla
-executable              = sleep.sh
-Arguments  = 4
-log                     = out/job.log
-output                  = out/worker2.outfile-$(Process).txt
-error                   = out/worker2.errors-$(Process).txt
-should_transfer_files   = Yes
-when_to_transfer_output = ON_EXIT
-queue 

@@ -1,9 +1,0 @@
-JOB  Setup setup.submit
-JOB  Work1 worker1.submit
-JOB  Work2 worker2.submit
-JOB  Work3 worker1.submit
-JOB  Work4 worker2.submit
-JOB  Final finalize.submit
-
-PARENT Setup CHILD Work1 Work2 Work3 Work4
-PARENT Work1 Work2 Work3 Work4 CHILD Final
