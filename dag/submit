@@ -1,0 +1,9 @@
+Universe   = vanilla
+executable              = sleep.sh
+Arguments  = 4
+log                     = out/sleep-$(Process).log
+output                  = out/outfile-$(Process).txt
+error                   = out/errors-$(Process).txt
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+queue 
